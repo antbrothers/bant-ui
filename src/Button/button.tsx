@@ -13,4 +13,4 @@ export const Button = (props: IProps) => {
       {props.text}
     </a>
   )
-};
+}; 
