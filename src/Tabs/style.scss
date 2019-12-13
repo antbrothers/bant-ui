@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container div {
+    height: 1000px;
+    background: red;
+    border-bottom: 1px solid #fff;
+    font-size: 64px;
+    line-height: 1000px;
+    text-align: center;
+}
+.nav-list {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    background: black;
+    z-index: 999;
+}
+.nav-list a {
+    float: left;
+    width: 100px;
+    padding: 20px 0;
+    line-height: 1;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.nav-list a.active {
+    color: red;
+}
+#page-a {
+background: #fff;
+}
+#page-b {
+background: yellow;
+height: 400px;
+}
+#page-c {
+background: red;
+}
+#page-d {
+background: green;
+}

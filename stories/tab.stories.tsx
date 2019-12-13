@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { text,date } from '@storybook/addon-knobs'
 import { withInfo } from '@storybook/addon-info'
-import { Tabs } from '../src/Tabs/tabs'
+import Tabs  from '../src/Tabs/tabs'
 const stories = storiesOf('Tabs', module)
 
 stories.add(
