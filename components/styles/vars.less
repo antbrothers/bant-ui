@@ -1,0 +1,354 @@
+/**
+*  cuke-ui
+*  默认主题配置
+*/
+
+@primary-color: #31c27c;
+@warning-color: #fca130;
+@error-color: #f93e3e;
+@success-color: #35C613;
+@info-color: #61affe;
+@bg-color: #FAFAFA;
+@border-color: #e8e8e8;
+@label-color: #333;
+@default-color: #d9d9d9;
+@loading-color: #61affe;
+@font-color: rgba(0, 0, 0, .65);
+@placeholder-color: rgba(0, 0, 0, .3);
+@disabled-color: #f5f5f5;
+@disabled-font-color: fade(@font-color, 25%);
+@font-size: 14px;
+@font-size-small: 12px;
+@font-size-large: 16px;
+@border-radius: 4px;
+@default-shadow: 0 4px 22px 0 rgba(15, 35, 95, 0.12);
+@default-section-shadow: 0 1px 4px 0 rgba(15, 35, 95, 0.12);
+@default-text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+@picker-offset-top: 5px;
+@mask-bg-color: rgba(0, 0, 0, .5);
+
+// 响应式断点
+@media-screen-xs-max : 576px;
+@mobile: ~ "screen and (max-width: @{media-screen-xs-max})";
+
+//动画时间
+@loading-time: 1.5s;
+@loading-opacity: .7;
+@animate-time : .5s;
+@animate-type: cubic-bezier(0.165, 0.84, 0.44, 1);
+@animate-type-easy-in-out: cubic-bezier(.9, .25, .08, .83);
+@default-transition: @animate-time @animate-type;
+
+
+//Button 按钮
+@button-default-width: 40px;
+@button-default-height: 40px;
+@button-small-width: 30px;
+@button-small-height: 30px;
+@button-large-width: 50px;
+@button-large-height: 50px;
+@button-default-font-size: @font-size;
+@button-large-font-size : 16px;
+@button-small-font-size : 12px;
+@button-small-padding: 0 10px;
+@button-large-padding: 0 40px;
+@button-default-padding: 0 30px;
+@button-box-shadow: 0 2px 0 rgba(15, 35, 95, .02);
+@button-disabled-opacity: .6;
+
+//Input 输入框
+@input-height: 40px;
+@input-height-large: 50px;
+@input-height-small: 30px;
+@input-padding: 4px 10px;
+@input-box-shadow: 0 0 0 2px fade(@primary-color, 20%);
+@input-box-shadow-error: 0 0 0 2px fade(@error-color, 20%);
+@input-prefix-offset: 12px;
+@input-suffix-offset: 12px;
+
+//Grid
+@max-col-length : 24;
+@max-row-width : 100%;
+
+//message 消息提示
+@message-show-time: @animate-time;
+@message-theme-dark-bg: @mask-bg-color;
+@message-theme-light-bg: #fff;
+@message-theme-dark-font-color: #fff;
+@message-z-index: 999;
+@message-width: 300px;
+@message-height: 180px;
+@message-width-sm: 200px;
+@message-padding: 12px 25px;
+@message-title-size: 24px;
+@message-title-size-sm: 16px;
+@message-icon-font-size: 45px;
+@message-icon-font-size-sm: 25px;
+
+//notification 消息提示
+@notification-show-time: @animate-time;
+@notification-theme-dark-bg: @mask-bg-color;
+@notification-theme-light-bg: #fff;
+@notification-theme-dark-font-color: #fff;
+@notification-z-index: 999;
+@notification-width: 400px;
+@notification-height: 100px;
+@notification-width-sm: 200px;
+@notification-padding: 25px 25px;
+@notification-title-size: 16px;
+@notification-title-size-sm: 16px;
+@notification-icon-font-size: 30px;
+@notification-icon-font-size-sm: 25px;
+@notification-offset-right: 20px;
+@notification-offset-top: 20px;
+@notification-margin-bottom: 16px;
+
+//Tooltip 文字提示
+@tooltip-bg-color: #444;
+@tooltip-font-color: #fff;
+@tooltip-padding: 5px 15px;
+@tooltip-triangle-width: 10px;   //三角形
+@tooltip-offset-y: 15px;
+@tooltip-offset-x: 15px;
+@tooltip-wrapper-z-index: 99;
+@tooltip-dark-bg-color: @tooltip-bg-color;
+@tooltip-light-bg-color: #fff;
+
+//Popover 文字框
+@popover-bg-color: #fff;
+@popover-padding: 0;
+@popover-wrapper-z-index: 99;
+@cuke-popover-content-padding: 12px 16px;
+@cuke-popover-content-width: 180px;
+@cuke-popover-title-height: 30px;
+
+//Popconfirm 气泡确认框
+@cuke-popconfirm-wrapper-z-index: 99;
+@cuke-popconfirm-wrapper-padding: 12px 20px;
+@cuke-popconfirm-offset: 12px;
+
+//Pagination 分页器
+@pagination-simple-offset: 0 15px;
+@pagination-item-offset: 8px;
+@pagination-item-padding: 0 8px;
+@pagination-item-size-default: 32px;
+@pagination-item-size-large: 40px;
+@pagination-item-size-small: 28px;
+
+//Alert 警告提示
+@alert-padding: 8px 15px;
+@alert-message-font-size : @font-size + 2px;
+@alert-message-margin : 0 0 8px 0;
+@alert-icon-margin: 0 5px 0 0;
+
+//Modal 对话框
+@modal-bg-color: #fff;
+@modal-z-index: 999;
+@modal-padding: 20px;
+@modal-header-height: 40px;
+@modal-footer-padding: 15px 20px;
+@modal-title-font-size: 16px;
+@modal-header-padding: 5px 10px;
+@modal-close-font-size: 20px;
+@modal-close-font-color: fade(@font-color, 45%);
+@modal-mask-color: @mask-bg-color;
+@modal-offset-top: 100px;
+@modal-offset-bottom: 100px;   // 超长 modal 距离底部的距离
+@modal-width : 520px;
+@modal-method-width : 420px;
+@modal-method-icon-size: 22px;
+@modal-method-icon-offset: 10px;
+@modal-header-title-padding: 0 30px;
+
+//Spin 加载中
+@spin-small-size: 24px;
+@spin-default-size: 32px;
+@spin-large-size: 40px;
+@spin-blur-opacity: .5;
+@spin-blur-filter: 1.5px;
+
+//BackTop 回到顶部
+@back-top-offset-right: 30px;
+@back-top-offset-bottom: 30px;
+@back-top-inner-width : 50px;
+@back-top-inner-height : 50px;
+
+//Progress 进度条
+@cuke-progress-height : 10px;
+@cuke-progress-stroke-width : 6px;
+@cuke-progress-border-radius: 20px;
+@cuke-progress-bg-offset : 15px 15px;
+@cuke-progress-animate-time: 15s;
+@cuke-progress-circle-percent-font-size: 20px;
+
+//Tabs 选项卡
+@tabs-tab-offset : 30px;
+@tabs-tab-padding : 12px 30px;
+@tabs-content-padding : 20px;
+@tabs-card-tab-offset: 2px;
+
+//Badge 徽标数
+@badge-width : 20px;
+@badge-height: 20px;
+@badge-z-index: 99;
+@badge-padding: 0 6px;
+@badge-font-size: 12px;
+@badge-dot-width : 8px;
+
+//Dropdown 下拉菜单
+@cuke-dropdown-z-index: 88;
+
+//Drawer 抽屉
+@cuke-drawer-z-index: 999;
+@cuke-drawer-width: 300px;
+@cuke-drawer-height: 300px;
+@cuke-drawer-animate-type: .3s cubic-bezier(.9, 0, .3, .7);
+@cuke-drawer-header-title-padding: 0 30px;
+@cuke-drawer-header-padding: 5px 10px;
+@cuke-drawer-header-height: 40px;
+
+//Radio 单选框
+@cuke-radio-width : 14px;
+@cuke-radio-height : @cuke-radio-width;
+@cuke-radio-offset-right: 6px;
+@cuke-radio-group-offset-right: 20px;
+
+//Container 包裹容器
+@container-width: 1200px;
+@container-padding: 12px 20px;
+
+//Timeline 时间轴
+@cuke-timeline-content-offset: 0 0 0 20px;
+@cuke-timeline-line-width: 2px;
+@cuke-timeline-dot-width: 10px;
+@cuke-timeline-dot-height: 10px;
+
+
+//Checkbox 复选框
+@cuke-checkbox-width : 16px;
+@cuke-checkbox-height : @cuke-checkbox-width;
+@cuke-checkbox-offset-right: 10px;
+@cuke-checkbox-group-offset-right: 20px;
+@cuke-checkbox-button-padding: 8px 20px;
+@cuke-checkbox-button-padding-large: 10px 28px;
+@cuke-checkbox-button-padding-small: 5px 10px;
+
+//Switch 开关
+@cuke-switch-width: 44px;
+@cuke-switch-height: 22px;
+@cuke-switch-width-small: 28px;
+@cuke-switch-height-small: 16px;
+@cuke-switch-width-large: 56px;
+@cuke-switch-height-large: 26px;
+@cuke-switch-circle-width: @cuke-switch-height - 4px;
+@cuke-switch-circle-width-small: @cuke-switch-height-small - 4px;
+@cuke-switch-circle-width-large: @cuke-switch-height-large - 4px;
+@cuke-switch-border-radius: 100px;
+@cuke-switch-bg-color:rgba(0, 0, 0, .25);
+@cuke-switch-offset: 2px;
+
+//Tag 标签
+@cuke-tag-border-radius: 20px;
+@tag-small-height: 30px;
+@tag-large-height: 50px;
+@tag-large-font-size : 16px;
+@tag-small-font-size : 12px;
+@tag-small-padding: 0 5px;
+@tag-large-padding: 2px 20px;
+@tag-default-width: 30px;
+@tag-default-height: 30px;
+@tag-large-width: 45px;
+@tag-large-height: 45px;
+@tag-small-width: 22px;
+@tag-small-height: 22px;
+
+//CityPicker 城市选择框
+@cuke-city-picker-width: 400px;
+@cuke-city-picker-z-index: 88;
+
+//Select 选择器
+@cuke-select-z-index: 99;
+@cuke-select-width: 200px;
+
+//DatePicker 日期选择器
+@cuke-date-picker-z-index: 88;
+@cuke-date-picker-content-height: 470px;
+@cuke-date-picker-content-width: 322px;
+@cuke-date-picker-content-max-width: 400px;
+@cuke-date-picker-date-width: 36px;
+@cuke-date-picker-date-height: 36px;
+@cuke-date-picker-date-offset: 0 4px 4px 0;
+@cuke-date-picker-padding: 15px 20px;
+
+//Breadcrumb 面包屑
+@cuke-breadcrumb-offset-bottom: 20px;
+@cuke-breadcrumb-padding: 10px 0;
+@cuke-breadcrumb-font-color: lighten(@font-color, 50%);
+@cuke-breadcrumb-separator-offset: 0 10px;
+@cuke-breadcrumb-separator-color: #d9d9d9;
+
+//NumberInput 数字输入框
+@cuke-number-input-width: 80px;
+@cuke-number-input-width-small: 60px;
+@cuke-number-input-width-large: 100px;
+
+//Steps
+@cuke-steps-offset-right: 35px;
+@cuke-steps-icon-font-size: 40px;
+@cuke-steps-icon-offset: 10px;
+@cuke-steps-done-title-color: fade(@font-color, 75%);
+@cuke-step-offset-top: 10px;
+@cuke-step-padding: 20px;
+
+//Collapse
+@collapse-animate-time: .3s;
+
+//Upload
+@cuke-upload-list-width: 300px;
+@cuke-upload-list-cover-width: 50px;
+@cuke-upload-list-cover-height: 50px;
+@cuke-upload-list-preview-width: 100%;
+@cuke-upload-list-preview-height: 300px;
+
+//Calendar
+@cuke-calendar-header-height: 60px;
+@cuke-calendar-day-header-height: 50px;
+@cuke-calendar-header-font-size: 18px;
+@cuke-calendar-active-color: fade(@primary-color, 50%);
+@cuke-calendar-mini-width: 300px;
+@cuke-calendar-item-mini-height: 45px;
+@cuke-calendar-day-header-mini-height: 40px;
+@cuke-calendar-header-mini-height: 50px;
+
+//Card
+@cuke-card-header-font-size: 16px;
+@cuke-card-header-padding: 18px 20px;
+@cuke-card-title-padding: 10px 20px;
+@cuke-card-content-padding: 22px 20px;
+
+//Form
+@cuke-form-item-padding-bottom: 35px;
+@cuke-form-item-label-padding-right: 10px;
+
+//Empty
+@cuke-empty-height: 200px;
+@cuke-empty-icon-size: 50px;
+@cuke-empty-offset: 12px;
+@cuke-empty-icon-height: 55px;
+
+//Avatar
+@cuke-avatar-size-base: 32px;
+@cuke-avatar-size-lg: 40px;
+@cuke-avatar-size-sm: 24px;
+@cuke-avatar-font-size-base: 18px;
+@cuke-avatar-font-size-lg: 24px;
+@cuke-avatar-font-size-sm: 14px;
+@cuke-avatar-bg: #ccc;
+@cuke-avatar-color: #fff;
+@cuke-avatar-border-radius: @border-radius;
+
+//Divider
+@cuke-divider-color: @border-color;
+
+//Table
+@cuke-table-row-hover-bg-color: fade(@primary-color, 10%);
