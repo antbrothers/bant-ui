@@ -1,3 +1,9 @@
+/*
+ * @Author: linjianxi
+ * @Date: 2019-07-29 03:00:10
+ * @LastEditTime: 2020-01-03 16:22:04
+ * @Description: file content
+ */
 module.exports = {
   verbose: true,
   setupFiles: ["./tests/setup.js"],
@@ -5,12 +11,12 @@ module.exports = {
   coveragePathIgnorePatterns: [
     "/components/index.js",
     "/components/styles",
-    "/components/version",
-    "/components/icon",
-    "/components/form",
-    "/components/wordPad",
-    "/components/dropdown",
-    "/components/styles"
+    // newFunction(),
+    // "/components/icon",
+    // "/components/form",
+    // "/components/wordPad",
+    // "/components/dropdown",
+    // "/components/styles"
   ],
   transformIgnorePatterns: ["/node_modules/", ".history/*", "lib", "dist"],
   modulePathIgnorePatterns: ["/.history/", "lib", "dist"],
@@ -31,3 +37,7 @@ module.exports = {
     "\\.(css|less)$": "<rootDir>/tests/__mocks__/styleMock.js"
   }
 };
+function newFunction() {
+  return "/components/version";
+}
+

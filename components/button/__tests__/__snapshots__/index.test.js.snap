@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button/> should render a <Button/> components 1`] = `
+<div>
+  <button
+    class="cuke-button cuke-button-default cuke-button-normal"
+    type="button"
+  >
+    <span>
+      你好
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-primary"
+    type="button"
+  >
+    <span>
+      你好
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-info"
+    type="button"
+  >
+    <span>
+      你好
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-warning"
+    type="button"
+  >
+    <span>
+      你好
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-error"
+    type="button"
+  >
+    <span>
+      你好
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-success"
+    type="button"
+  >
+    <span>
+      你好
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-normal cuke-button-disabled"
+    disabled=""
+    type="button"
+  >
+    <span>
+      你好
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-default cuke-button-normal cuke-button-loading"
+    disabled=""
+    type="button"
+  >
+    <span>
+      加载中..
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-default cuke-button-normal cuke-button-block"
+    type="button"
+  >
+    <span>
+      100%
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-default cuke-button-normal cuke-button-circle"
+    type="button"
+  >
+    <span>
+      圆形
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-primary cuke-button-size-large"
+    type="button"
+  >
+    <span>
+      大
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-info"
+    type="button"
+  >
+    <span>
+      中
+    </span>
+  </button>
+  <button
+    class="cuke-button cuke-button-warning cuke-button-size-small"
+    type="button"
+  >
+    <span>
+      小
+    </span>
+  </button>
+</div>
+`;
