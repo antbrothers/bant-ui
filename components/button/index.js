@@ -1,8 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import cls from "classnames";
-// import { LoadingIcon } from "../icon";
-
 const sizes = {
   small: "small",
   default: "default",
@@ -21,7 +19,7 @@ const types = {
 
 export default class Button extends PureComponent {
   static defaultProps = {
-    prefixCls: "cuke-button",
+    prefixCls: "bant-button",
     href: "",
     type: types.default,
     htmlType: "button",

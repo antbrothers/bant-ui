@@ -3,7 +3,7 @@
 exports[`<Button/> should render a <Button/> components 1`] = `
 <div>
   <button
-    class="cuke-button cuke-button-default cuke-button-normal"
+    class="bant-button bant-button-default bant-button-normal"
     type="button"
   >
     <span>
@@ -11,7 +11,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-primary"
+    class="bant-button bant-button-primary"
     type="button"
   >
     <span>
@@ -19,7 +19,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-info"
+    class="bant-button bant-button-info"
     type="button"
   >
     <span>
@@ -27,7 +27,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-warning"
+    class="bant-button bant-button-warning"
     type="button"
   >
     <span>
@@ -35,7 +35,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-error"
+    class="bant-button bant-button-error"
     type="button"
   >
     <span>
@@ -43,7 +43,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-success"
+    class="bant-button bant-button-success"
     type="button"
   >
     <span>
@@ -51,7 +51,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-normal cuke-button-disabled"
+    class="bant-button bant-button-normal bant-button-disabled"
     disabled=""
     type="button"
   >
@@ -60,7 +60,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-default cuke-button-normal cuke-button-loading"
+    class="bant-button bant-button-default bant-button-normal bant-button-loading"
     disabled=""
     type="button"
   >
@@ -69,7 +69,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-default cuke-button-normal cuke-button-block"
+    class="bant-button bant-button-default bant-button-normal bant-button-block"
     type="button"
   >
     <span>
@@ -77,7 +77,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-default cuke-button-normal cuke-button-circle"
+    class="bant-button bant-button-default bant-button-normal bant-button-circle"
     type="button"
   >
     <span>
@@ -85,7 +85,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-primary cuke-button-size-large"
+    class="bant-button bant-button-primary bant-button-size-large"
     type="button"
   >
     <span>
@@ -93,7 +93,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-info"
+    class="bant-button bant-button-info"
     type="button"
   >
     <span>
@@ -101,7 +101,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="cuke-button cuke-button-warning cuke-button-size-small"
+    class="bant-button bant-button-warning bant-button-size-small"
     type="button"
   >
     <span>

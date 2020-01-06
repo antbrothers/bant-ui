@@ -48,16 +48,16 @@ describe("<Button/>", () => {
         <Button circle>100%</Button>
       </div>
     );
-    assert(wrapper.find(".cuke-button").length >= 1);
-    assert(wrapper.find(".cuke-button-primary").length === 1);
-    assert(wrapper.find(".cuke-button-info").length === 1);
-    assert(wrapper.find(".cuke-button-warning").length === 1);
-    assert(wrapper.find(".cuke-button-error").length === 1);
-    assert(wrapper.find(".cuke-button-success").length === 1);
-    assert(wrapper.find(".cuke-button-disabled").length === 1);
-    assert(wrapper.find(".cuke-button-loading").length === 1);
-    assert(wrapper.find(".cuke-button-block").length === 1);
-    assert(wrapper.find(".cuke-button-circle").length === 1);
+    assert(wrapper.find(".bant-button").length >= 1);
+    assert(wrapper.find(".bant-button-primary").length === 1);
+    assert(wrapper.find(".bant-button-info").length === 1);
+    assert(wrapper.find(".bant-button-warning").length === 1);
+    assert(wrapper.find(".bant-button-error").length === 1);
+    assert(wrapper.find(".bant-button-success").length === 1);
+    assert(wrapper.find(".bant-button-disabled").length === 1);
+    assert(wrapper.find(".bant-button-loading").length === 1);
+    assert(wrapper.find(".bant-button-block").length === 1);
+    assert(wrapper.find(".bant-button-circle").length === 1);
   });
 
   it("should can trigger click event", () => {
@@ -88,7 +88,7 @@ describe("<Button/>", () => {
 
   it("should render link", () => {
     const wrapper = shallow(<Button href="/test">黄瓜ui</Button>);
-    assert(wrapper.find(".cuke-button-link").length >= 1);
+    assert(wrapper.find(".bant-button-link").length >= 1);
   });
 
   it("should can not click link when disabled", () => {
