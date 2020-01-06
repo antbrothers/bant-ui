@@ -51,13 +51,7 @@
       "git add"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test"
-    }
-  },
+  
   "storybook-deployer": {
     "gitUsername": "antbrothers",
     "gitEmail": "jianxi_lin@163.com",
@@ -126,15 +120,15 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.4.5",
     "@semantic-release/changelog": "^3.0.2",
-    "@storybook/addon-actions": "^4.1.4",
-    "@storybook/addon-console": "^1.1.0",
-    "@storybook/addon-info": "^4.1.4",
-    "@storybook/addon-links": "^4.1.4",
-    "@storybook/addon-notes": "^4.1.4",
-    "@storybook/addon-options": "^4.1.4",
-    "@storybook/addon-storysource": "^4.1.4",
-    "@storybook/addon-viewport": "^4.1.4",
-    "@storybook/react": "^4.1.4",
+    "@storybook/addon-actions": "5.2.8",
+    "@storybook/addon-console": "1.2.1",
+    "@storybook/addon-info": "5.2.8",
+    "@storybook/addon-links": "5.2.8",
+    "@storybook/addon-notes": "5.2.8",
+    "@storybook/addon-options": "5.2.8",
+    "@storybook/addon-storysource": "5.2.8",
+    "@storybook/addon-viewport": "5.2.8",
+    "@storybook/react": "5.2.8",
     "@storybook/storybook-deployer": "^2.8.1",
     "autoprefixer": "^6.7.2",
     "babel-core": "^7.0.0-bridge.0",
