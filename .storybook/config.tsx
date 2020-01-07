@@ -1,12 +1,12 @@
 /*
  * @Author: linjianxi
  * @Date: 2019-12-27 15:35:01
- * @LastEditTime : 2019-12-27 17:50:39
+ * @LastEditTime : 2020-01-07 15:12:04
  * @Description: file content
  */
 import React from "react"
 import { configure, addDecorator } from '@storybook/react';
-import { name, repository, version } from "../package.json"
+import v from "../package.json"
 import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 import { configureActions } from '@storybook/addon-actions';
@@ -35,10 +35,10 @@ addDecorator(withInfo({
 }))
 addDecorator(withNotes);
 addDecorator(withOptions({
-  name: `${name} v${version}`,
-  url: repository,
+  name: `${v.name} v${v.version}`,
+  url: v.repository,
   sidebarAnimations: true,
 }))
 
-addDecorator(story => <div style={{ padding: "0 60px 50px" }}>{story()}</div>)
+// addDecorator(story => <div style={{ padding: "0 60px 50px" }}>{story()}</div>)
 configure(loadStories, module);

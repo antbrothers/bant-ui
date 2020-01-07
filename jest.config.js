@@ -1,15 +1,15 @@
 /*
  * @Author: linjianxi
  * @Date: 2019-07-29 03:00:10
- * @LastEditTime: 2020-01-03 16:22:04
+ * @LastEditTime : 2020-01-07 14:53:23
  * @Description: file content
  */
 module.exports = {
   verbose: true,
   setupFiles: ["./tests/setup.js"],
-  moduleFileExtensions: ["js", "jsx", "json"],
+  moduleFileExtensions: ["ts", "tsx","js", "jsx", "json"],
   coveragePathIgnorePatterns: [
-    "/components/index.js",
+    "/components/index.tsx",
     "/components/styles",
     // newFunction(),
     // "/components/icon",
@@ -23,11 +23,12 @@ module.exports = {
   moduleDirectories: ["node_modules", ".", "src", "src/shared"],
   snapshotSerializers: ["enzyme-to-json/serializer"],
   collectCoverageFrom: [
-    "components/**/*.{js,jsx}",
-    "!components/**/style.{js,jsx}"
+    "components/**/*.{js,jsx,ts,tsx}",
+    "!components/**/style.{js,jsx,ts,tsx}"
   ],
   transform: {
-    "^.+\\.jsx?$": "babel-jest"
+    "^.+\\.jsx?$": "babel-jest",
+    "^.+\\.tsx?$": "babel-jest"
   },
   testURL: "http://localhost",
   rootDir: __dirname,

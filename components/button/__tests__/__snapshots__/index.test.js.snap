@@ -4,7 +4,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
 <div>
   <button
     class="bant-button bant-button-default bant-button-normal"
-    type="button"
   >
     <span>
       你好
@@ -12,7 +11,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-primary"
-    type="button"
   >
     <span>
       你好
@@ -20,7 +18,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-info"
-    type="button"
   >
     <span>
       你好
@@ -28,7 +25,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-warning"
-    type="button"
   >
     <span>
       你好
@@ -36,7 +32,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-error"
-    type="button"
   >
     <span>
       你好
@@ -44,7 +39,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-success"
-    type="button"
   >
     <span>
       你好
@@ -53,7 +47,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   <button
     class="bant-button bant-button-normal bant-button-disabled"
     disabled=""
-    type="button"
   >
     <span>
       你好
@@ -62,7 +55,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   <button
     class="bant-button bant-button-default bant-button-normal bant-button-loading"
     disabled=""
-    type="button"
   >
     <span>
       加载中..
@@ -70,7 +62,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-default bant-button-normal bant-button-block"
-    type="button"
   >
     <span>
       100%
@@ -78,7 +69,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-default bant-button-normal bant-button-circle"
-    type="button"
   >
     <span>
       圆形
@@ -86,7 +76,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-primary bant-button-size-large"
-    type="button"
   >
     <span>
       大
@@ -94,7 +83,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-info"
-    type="button"
   >
     <span>
       中
@@ -102,7 +90,6 @@ exports[`<Button/> should render a <Button/> components 1`] = `
   </button>
   <button
     class="bant-button bant-button-warning bant-button-size-small"
-    type="button"
   >
     <span>
       小

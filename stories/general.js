@@ -14,7 +14,7 @@ storiesOf('普通', module).add(
 
       <Button onClick={action('clicked')}>默认</Button>
 
-      <Button type="primary" onClick={action('clicked')}>
+      {/* <Button type="primary" onClick={action('clicked')}>
         主色调
       </Button>
 
@@ -158,7 +158,7 @@ storiesOf('普通', module).add(
         </Button>
       <Button type="primary" circle size="large">
         大
-        </Button>
+        </Button> */}
     </div>
   )
 );

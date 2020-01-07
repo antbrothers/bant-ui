@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react";
-import PropTypes from "prop-types";
 import cls from "classnames";
 const sizes = {
   small: "small",
@@ -17,7 +16,25 @@ const types = {
   disabled: "disabled"
 };
 
-export default class Button extends PureComponent {
+interface Props {
+  prefixCls?: string,
+  block?: boolean,
+  hollow?: boolean,
+  loading?: boolean,
+  disabled?: boolean,
+  dashed?: boolean,
+  circle?: boolean,
+  plain?: boolean,
+  htmlType?: string,
+  href?: string,
+  type?: 'primary',
+  size?: string,
+  className?: string,
+  onClick?: () => void
+
+}
+
+export default class Button extends PureComponent<Props, any> {
   static defaultProps = {
     prefixCls: "bant-button",
     href: "",
@@ -31,21 +48,8 @@ export default class Button extends PureComponent {
     dashed: false,
     circle: false,
     plain: false
-  };
-  static propTypes = {
-    prefixCls: PropTypes.string.isRequired,
-    block: PropTypes.bool,
-    hollow: PropTypes.bool,
-    loading: PropTypes.bool,
-    disabled: PropTypes.bool,
-    dashed: PropTypes.bool,
-    circle: PropTypes.bool,
-    plain: PropTypes.bool,
-    htmlType: PropTypes.string,
-    href: PropTypes.string,
-    type: PropTypes.oneOf(Object.values(types)),
-    size: PropTypes.oneOf(Object.values(sizes))
-  };
+  }
+ 
   render() {
     const {
       loading,
@@ -65,13 +69,12 @@ export default class Button extends PureComponent {
       plain,
       ...attr
     } = this.props;
-
     const isDisabled = disabled || loading ? { disabled: true } : { onClick };
 
     const baseProps = {
       ...attr,
       ...isDisabled,
-      type: htmlType,
+      // type: htmlType,
       className: cls(prefixCls, className, {
         [`${prefixCls}-${type}`]: type,
         [`${prefixCls}-default`]: !disabled && type === types.default,
@@ -86,7 +89,6 @@ export default class Button extends PureComponent {
         [`${prefixCls}-plain`]: plain
       })
     };
-
     const content = (
       <>
         {loading && !circle}
@@ -97,7 +99,7 @@ export default class Button extends PureComponent {
       return (
         <a
           href={disabled ? "javascript:void(0);" : href}
-          disabled={disabled}
+          // disabled={disabled}
           className={cls(`${prefixCls}-link`, className, {
             [`${prefixCls}-link-disabled`]: disabled
           })}

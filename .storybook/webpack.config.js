@@ -1,7 +1,7 @@
 /*
  * @Author: linjianxi
  * @Date: 2019-12-27 15:35:12
- * @LastEditTime: 2019-12-27 15:35:36
+ * @LastEditTime : 2020-01-07 14:36:51
  * @Description: file content
  */
 const path = require("path")
@@ -20,6 +20,7 @@ module.exports = {
         ],
         exclude: /node_modules/,
       },
+      { test: /\.tsx?$/, loaders: ['babel-loader', 'ts-loader'], include: path.resolve('components') },
       {
         test: /\.less$/,
         use: [
@@ -90,7 +91,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx", ".js", ".json"]
+    extensions: [".ts", ".tsx",".js", ".jsx", ".js", ".json"]
   },
   plugins: [
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /zh-cn|en-gb/),

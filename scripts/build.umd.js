@@ -33,7 +33,7 @@ const LOGO = `
 const config = {
   mode: "production",
   entry: {
-    [name]: ["./components/index.js"]
+    [name]: ["./components/index.tsx"]
   },
 
   //umd 模式打包
@@ -61,7 +61,7 @@ const config = {
   },
   resolve: {
     enforceExtension: false,
-    extensions: [".js", ".jsx", ".json", ".less", ".css"]
+    extensions: ['.ts', '.tsx', ".js", ".jsx", ".json", ".less", ".css"]
   },
   module: {
     rules: [
@@ -75,6 +75,8 @@ const config = {
         exclude: "/node_modules/",
         include: [path.resolve("components")]
       },
+      // .ts(x) 文件应该首先经过 Typescript loader 的处理, 然后是 babel 的处理
+      { test: /\.tsx?$/, loaders: ['babel-loader', 'ts-loader'], include: path.resolve('components') },
       {
         test: /\.(le|c)ss$/,
         use: [
