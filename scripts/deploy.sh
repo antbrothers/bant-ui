@@ -1,3 +1,9 @@
+###
+ # @Author: linjianxi
+ # @Date: 2020-01-06 10:12:20
+ # @LastEditTime : 2020-01-08 14:23:51
+ # @Description: file content
+ ###
 #!/usr/bin/env sh
 
 # 确保脚本抛出遇到的错误
@@ -16,13 +22,13 @@ echo "start publish..."
 # 提交到  gh-pages
 git config  --get remote.origin.url
 git init
-git config user.name "cuke-ui"
-git config user.email "1359518268@qq.com"
+git config user.name "antbrothers"
+git config user.email "jianxi_lin@163.com"
 git add .
 git commit -m 'docs:deploy'
 
-git push --force --quiet git@github.com:cuke-ui/cuke-ui.git master:gh-pages
+git push --force --quiet git@github.com:antbrothers/bant-ui.git master:gh-pages
 
-echo "√ publish success 🥒"
+echo "√ publish success"
 
 cd -

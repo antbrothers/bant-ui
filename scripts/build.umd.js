@@ -3,7 +3,7 @@
  * @description 参考 dragon-ui
  * @description 这里选择  webpack 进行打包  rollup也可以
  * @description 输出目录 [dist]
- * @description 文件名 [cuke-ui]
+ * @description 文件名 [bant-ui]
  * CMD Node.js 环境
  * AMD 浏览器环境
  * UMD 两种环境都可以执行
@@ -22,11 +22,11 @@ const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer")
 const { version, name, description } = require("../package.json");
 
 const LOGO = `
-              __                    _ 
-  _______  __/ /_____        __  __(_)
- / ___/ / / / //_/ _ \\______/ / / / / 
-/ /__/ /_/ / ,< /  __/_____/ /_/ / /  
-\\___/\\__,_/_/|_|\\___/     \\__,_/_/   
+ _                 _              _ 
+| |__   __ _ _ __ | |_      _   _(_)
+| '_ \ / _' | '_ \| __|____| | | | |
+| |_) | (_| | | | | ||_____| |_| | |
+|_.__/ \__,_|_| |_|\__|     \__,_|_|                                                                                         
                                       
 `
 

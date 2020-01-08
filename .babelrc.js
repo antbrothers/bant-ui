@@ -1,18 +1,18 @@
 /*
  * @Author: linjianxi
  * @Date: 2019-12-27 17:33:13
- * @LastEditTime : 2020-01-07 15:03:51
+ * @LastEditTime : 2020-01-08 10:24:50
  * @Description: file content
  */
 const env = process.env.BABEL_ENV || process.env.NODE_ENV;
 const outputModule = process.env.OUTPUT_MODULE;
-
+console.log('OUTPUT_MODULE:' + outputModule)
 module.exports = {
   presets: [
     [     
       "@babel/preset-env",
       {
-        modules: outputModule || false
+        modules: 'commonjs'
       }
     ],
     "@babel/preset-react",

@@ -1,7 +1,13 @@
+/*
+ * @Author: linjianxi
+ * @Date: 2020-01-06 10:12:20
+ * @LastEditTime: 2020-01-08 10:42:36
+ * @Description: file content
+ */
 module.exports = {
   plugins: [
     require("autoprefixer")({
-      browsers: [
+      overrideBrowserslist: [
         "last 2 versions", 
         "Android >= 4.4",
         "Firefox ESR",

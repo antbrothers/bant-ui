@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Button from '../components/button';
+import Button from '../components/button/index';
 import './styles/button.less';
 
 import "../components/button/styles.less";
