@@ -22,7 +22,7 @@
     "upgrade": "yarn upgrade",
     "stylelint:fix": "stylelint 'components/**/*.less' --syntax less --fix",
     "eslint:fix": "eslint ./components --fix",
-    "lint": "prettier --write \"components/**/*.js\" && yarn eslint:fix && yarn stylelint:fix",
+    "lint": "prettier --write \"components/**/*.tsx\" && yarn eslint:fix && yarn stylelint:fix",
     "test": "cross-env BABEL_ENV=test jest --config  jest.config.js",
     "test:update": "yarn test -u",
     "coverage": "yarn test --coverage",
