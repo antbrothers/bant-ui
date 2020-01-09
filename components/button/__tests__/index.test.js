@@ -3,30 +3,42 @@ import assert from "power-assert";
 import { render, shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 import Button from "../index";
+import { action } from '@storybook/addon-actions';
+
 // import { LoadingIcon } from "../../icon";
 
 describe("<Button/>", () => {
   it("should render a <Button/> components", () => {
     const wrapper = render(
       <div>
-        <Button>你好</Button>
-        <Button type="primary">你好</Button>
-        <Button type="info">你好</Button>
-        <Button type="warning">你好</Button>
-        <Button type="error">你好</Button>
-        <Button type="success">你好</Button>
-        <Button disabled>你好</Button>
-        <Button loading>加载中..</Button>
-        <Button block>100%</Button>
-        <Button circle>圆形</Button>
-        <Button type="primary" size="large">
-          大
+        <Button onClick={action('clicked')}>默认</Button>
+
+        <Button type="primary" onClick={action('clicked')}>
+          主色调
         </Button>
 
-        <Button type="info">中</Button>
+        <Button type="info" onClick={action('clicked')}>
+          信息
+        </Button>
 
-        <Button type="warning" size="small">
-          小
+        <Button type="warning" onClick={action('clicked')}>
+          警告
+        </Button>
+
+        <Button type="error" onClick={action('clicked')}>
+          错误
+        </Button>
+
+        <Button type="success" onClick={action('clicked')}>
+          成功
+        </Button>
+
+        <Button disabled onClick={action('clicked')}>
+          禁用
+        </Button>
+
+        <Button icon="loading" loading={true} onClick={action('clicked')}>
+          加载中
         </Button>
       </div>
     );

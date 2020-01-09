@@ -1,7 +1,7 @@
 ###
  # @Author: linjianxi
  # @Date: 2020-01-06 10:12:20
- # @LastEditTime : 2020-01-08 14:23:51
+ # @LastEditTime : 2020-01-08 15:36:58
  # @Description: file content
  ###
 #!/usr/bin/env sh
@@ -25,7 +25,7 @@ git init
 git config user.name "antbrothers"
 git config user.email "jianxi_lin@163.com"
 git add .
-git commit -m 'docs:deploy'
+git commit -m 'docs: deploy'
 
 git push --force --quiet git@github.com:antbrothers/bant-ui.git master:gh-pages
 

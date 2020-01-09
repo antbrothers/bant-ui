@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon/> should render a <Icon/> components 1`] = `
+<div>
+  <svg
+    class="bant-icon bant-icon-loading bant-icon-sm"
+  >
+    <use
+      href="#loading"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-check bant-icon-sm"
+    style="color:D9AF5C"
+  >
+    <use
+      href="#check"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-check-circle-o bant-icon-sm"
+  >
+    <use
+      href="#check-circle-o"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-check-circle bant-icon-sm"
+    style="color:green"
+  >
+    <use
+      href="#check-circle"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-cross bant-icon-sm"
+  >
+    <use
+      href="#cross"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-cross-circle bant-icon-sm"
+  >
+    <use
+      href="#cross-circle"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-cross-circle-o bant-icon-sm"
+    style="color:red"
+  >
+    <use
+      href="#cross-circle-o"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-up bant-icon-sm"
+  >
+    <use
+      href="#up"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-down bant-icon-sm"
+  >
+    <use
+      href="#down"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-left bant-icon-sm"
+  >
+    <use
+      href="#left"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-right bant-icon-sm"
+  >
+    <use
+      href="#right"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-ellipsis bant-icon-sm"
+  >
+    <use
+      href="#ellipsis"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-loading bant-icon-xs"
+  >
+    <use
+      href="#loading"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-loading bant-icon-xxs"
+  >
+    <use
+      href="#loading"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-loading bant-icon-sm"
+  >
+    <use
+      href="#loading"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-loading bant-icon-md"
+  >
+    <use
+      href="#loading"
+    />
+  </svg>
+  <svg
+    class="bant-icon bant-icon-loading bant-icon-lg"
+  >
+    <use
+      href="#loading"
+    />
+  </svg>
+</div>
+`;

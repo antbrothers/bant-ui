@@ -1,8 +1,8 @@
-.cuke-button-hover(@color: @default-color, @lighten: 5%, @font-color: #fff) {
+.bant-button-hover(@color: @default-color, @lighten: 5%, @font-color: #fff) {
   color: @font-color;
   background-color: @color;
   border: 1px solid @color;
-  &:not(.cuke-button-disabled):not(.cuke-button-default):not(.cuke-button-dashed):not(.cuke-button-hollow) {
+  &:not(.bant-button-disabled):not(.bant-button-default):not(.bant-button-dashed):not(.bant-button-hollow) {
     &:hover,
     &:active,
     &:focus {
@@ -11,14 +11,14 @@
       color: lighten(@font-color, @lighten);
     }
   }
-  &.cuke-button-default {
+  &.bant-button-default {
     &:active,
     &:focus {
       border: 1px solid @primary-color;
       color: lighten(@primary-color, @lighten);
     }
   }
-  &.cuke-button-dashed {
+  &.bant-button-dashed {
     border: 1px dashed @border-color;
     &:hover,
     &:active,
@@ -33,7 +33,7 @@
   color: @font-color;
   background-color: @color;
   border: 1px solid @color;
-  &:not(.cuke-tag-disabled):not(.cuke-tag-default):not(.cuke-tag-color) {
+  &:not(.bant-tag-disabled):not(.bant-tag-default):not(.bant-tag-color) {
     &:hover,
     &:active,
     &:focus {
@@ -42,11 +42,11 @@
   }
 }
 
-.cuke-button-hollow(@color, @lighten : 5%) {
+.bant-button-hollow(@color, @lighten : 5%) {
   color: @color;
   background: transparent;
   text-shadow: unset;
-  &:not(.cuke-button-disabled) {
+  &:not(.bant-button-disabled) {
     &:hover,
     &:active,
     &:focus {
@@ -55,7 +55,7 @@
       color: lighten(@color, @lighten);
     }
   }
-  &.cuke-button-dashed {
+  &.bant-button-dashed {
     border: 1px dashed @color;
     &:hover,
     &:active,
@@ -70,7 +70,7 @@
 .tag-hollow(@color, @lighten : 5%) {
     color: @color;
     background: transparent;
-    &:not(.cuke-tag-disabled):not(.cuke-tag-color) {
+    &:not(.bant-tag-disabled):not(.bant-tag-color) {
       &:hover,
       &:active,
       &:focus {
@@ -104,7 +104,7 @@
 
 .set-progress-bar-bg(@primaryColor: @primary-color) {
   background: repeating-linear-gradient(-45deg, @bg-color 25%, @primaryColor 0, @primaryColor 50%, @bg-color 0, @bg-color 75%, @primaryColor 0);
-  background-size: @cuke-progress-bg-offset;
+  background-size: @bant-progress-bg-offset;
 }
 
 .ellipsis(@n: 2) {

@@ -1,7 +1,7 @@
 /*
  * @Author: linjianxi
  * @Date: 2019-12-27 15:35:01
- * @LastEditTime : 2020-01-07 15:12:04
+ * @LastEditTime : 2020-01-09 15:55:54
  * @Description: file content
  */
 import React from "react"
@@ -20,8 +20,8 @@ function loadStories() {
   require('../stories/index');
   // 普通
   require('../stories/general');
+  require('../stories/icon');
 }
-
 configureActions({
   depth: 100
 })

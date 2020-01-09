@@ -1,7 +1,7 @@
 /*
  * @Author: linjianxi
  * @Date: 2019-12-27 15:35:12
- * @LastEditTime : 2020-01-07 14:36:51
+ * @LastEditTime : 2020-01-09 16:10:17
  * @Description: file content
  */
 const path = require("path")
@@ -20,7 +20,20 @@ module.exports = {
         ],
         exclude: /node_modules/,
       },
-      { test: /\.tsx?$/, loaders: ['babel-loader', 'ts-loader'], include: path.resolve('components') },
+      { 
+        // test: /\.tsx?$/, 
+        // loaders: ['babel-loader', 'ts-loader'], include: [path.resolve('components'), path.resolve('stories')] 
+        test: /\.(ts|tsx)$/,
+        use: [
+          {
+            loader: require.resolve('babel-loader'),
+            options: {
+              presets: [['react-app', { flow: false, typescript: true }]],
+            }
+          },
+          require.resolve("react-docgen-typescript-loader"),
+        ]
+      },
       {
         test: /\.less$/,
         use: [
@@ -91,7 +104,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".ts", ".tsx",".js", ".jsx", ".js", ".json"]
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".js", ".json"]
   },
   plugins: [
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /zh-cn|en-gb/),

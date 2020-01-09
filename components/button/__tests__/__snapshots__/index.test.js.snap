@@ -3,96 +3,69 @@
 exports[`<Button/> should render a <Button/> components 1`] = `
 <div>
   <button
-    class="bant-button bant-button-default bant-button-normal"
+    class="bant-button bant-button-default bant-button-size-large"
   >
     <span>
-      你好
-    </span>
-  </button>
-  <button
-    class="bant-button bant-button-primary"
-  >
-    <span>
-      你好
-    </span>
-  </button>
-  <button
-    class="bant-button bant-button-info"
-  >
-    <span>
-      你好
-    </span>
-  </button>
-  <button
-    class="bant-button bant-button-warning"
-  >
-    <span>
-      你好
-    </span>
-  </button>
-  <button
-    class="bant-button bant-button-error"
-  >
-    <span>
-      你好
-    </span>
-  </button>
-  <button
-    class="bant-button bant-button-success"
-  >
-    <span>
-      你好
-    </span>
-  </button>
-  <button
-    class="bant-button bant-button-normal bant-button-disabled"
-    disabled=""
-  >
-    <span>
-      你好
-    </span>
-  </button>
-  <button
-    class="bant-button bant-button-default bant-button-normal bant-button-loading"
-    disabled=""
-  >
-    <span>
-      加载中..
-    </span>
-  </button>
-  <button
-    class="bant-button bant-button-default bant-button-normal bant-button-block"
-  >
-    <span>
-      100%
-    </span>
-  </button>
-  <button
-    class="bant-button bant-button-default bant-button-normal bant-button-circle"
-  >
-    <span>
-      圆形
+      默认
     </span>
   </button>
   <button
     class="bant-button bant-button-primary bant-button-size-large"
   >
     <span>
-      大
+      主色调
     </span>
   </button>
   <button
-    class="bant-button bant-button-info"
+    class="bant-button bant-button-info bant-button-size-large"
   >
     <span>
-      中
+      信息
     </span>
   </button>
   <button
-    class="bant-button bant-button-warning bant-button-size-small"
+    class="bant-button bant-button-warning bant-button-size-large"
   >
     <span>
-      小
+      警告
+    </span>
+  </button>
+  <button
+    class="bant-button bant-button-error bant-button-size-large"
+  >
+    <span>
+      错误
+    </span>
+  </button>
+  <button
+    class="bant-button bant-button-success bant-button-size-large"
+  >
+    <span>
+      成功
+    </span>
+  </button>
+  <button
+    class="bant-button bant-button-default bant-button-disabled bant-button-size-large"
+    disabled=""
+  >
+    <span>
+      禁用
+    </span>
+  </button>
+  <button
+    class="bant-button bant-button-default bant-button-loading bant-button-size-large bant-button-icon-loading"
+    disabled=""
+    icon="loading"
+  >
+    <svg
+      class="bant-icon bant-icon-loading bant-icon-xxs"
+    >
+      <use
+        href="#loading"
+      />
+    </svg>
+    <span>
+      加载中
     </span>
   </button>
 </div>

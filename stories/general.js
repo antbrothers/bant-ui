@@ -14,11 +14,11 @@ storiesOf('普通', module).add(
 
       <Button onClick={action('clicked')}>默认</Button>
 
-      {/* <Button type="primary" onClick={action('clicked')}>
+     <Button type="primary" onClick={action('clicked')}>
         主色调
       </Button>
 
-      <Button type="info" onClick={action('clicked')}>
+       <Button type="info" onClick={action('clicked')}>
         信息
       </Button>
 
@@ -38,15 +38,11 @@ storiesOf('普通', module).add(
         禁用
       </Button>
 
-      <Button type="primary" dashed onClick={action('clicked')}>
-        虚线
-      </Button>
-
-      <Button type="primary" loading={true} onClick={action('clicked')}>
+      <Button icon="loading"  loading={true} onClick={action('clicked')}>
         加载中
       </Button>
 
-      <Button type="primary" block onClick={action('clicked')}>
+      {/* <Button type="primary" block onClick={action('clicked')}>
         100%
       </Button>
 
