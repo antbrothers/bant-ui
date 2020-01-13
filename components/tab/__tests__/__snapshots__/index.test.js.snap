@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button/> should render a <Button/> components 1`] = `
+<div>
+  <div>
+    <span>
+      默认
+    </span>
+  </div>
+</div>
+`;
