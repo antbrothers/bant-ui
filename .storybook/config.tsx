@@ -1,7 +1,7 @@
 /*
  * @Author: linjianxi
  * @Date: 2019-12-27 15:35:01
- * @LastEditTime : 2020-01-09 15:55:54
+ * @LastEditTime : 2020-01-13 18:01:54
  * @Description: file content
  */
 import React from "react"
@@ -21,6 +21,7 @@ function loadStories() {
   // 普通
   require('../stories/general');
   require('../stories/icon');
+  require('../stories/tab')
 }
 configureActions({
   depth: 100
@@ -40,5 +41,5 @@ addDecorator(withOptions({
   sidebarAnimations: true,
 }))
 
-// addDecorator(story => <div style={{ padding: "0 60px 50px" }}>{story()}</div>)
+addDecorator(story => <div style={{ padding: "0 60px 50px" }}>{story()}</div>)
 configure(loadStories, module);
